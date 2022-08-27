@@ -1,0 +1,818 @@
+*{margin:0;
+padding:0;}
+
+
+li{list-style:none ;}
+
+
+.titulo-pricipal{
+   
+                 
+                 font-family: "Caveat";
+                 border: none;
+                 color: rgb(11, 12, 12);
+                 text-decoration:dashed;
+                 font-size: 70px;
+                 padding-left: 20px;
+                 padding-top: 50px;
+}
+
+.mainCointainer{
+
+                height: 120vh;
+                display: grid;
+                grid-template-areas: 
+                "parrafoInicio salidasTitulo"
+                "parrafoInicio salidaUco"
+                "parrafoInicio salidaMaipu"
+                "parrafoInicio salidaCuyo"
+                ;
+
+                grid-template-rows:10% 30% 30% 30% ;
+                grid-template-columns:30% 70% ;
+}
+
+#parrafoInicio{
+                grid-area: parrafoInicio;
+}
+
+#salidasTitulo{
+                grid-area: salidasTitulo;
+}
+
+#salidaUco{
+                grid-area: salidaUco;
+}
+
+#salidaMaipu{
+                grid-area: salidaMaipu;
+}
+
+#salidaCuyo{
+                grid-area: salidaCuyo;
+}
+
+.logo{
+                font-family: "Caveat";
+                border: none;
+                color: rgb(11, 12, 12);
+                text-decoration:dashed;
+                font-size: 35px;
+}
+
+.titulo{
+                color: rgb(11, 12, 12);
+                text-decoration:dashed;
+                font-size: smaller; 
+                font-family: "Inter";
+                text-align: center;
+            }
+ 
+
+body{
+                font-family: "Inter";
+                background-color: rgba(138, 162, 141, 0.3);
+}
+
+.titulo{
+                color: rgb(11, 12, 12);        
+                height: fit-content;
+                width   : fit-content;
+}
+
+nav{
+                margin:4px 0;
+                position: sticky;
+                background-color:rgba(74, 73, 73, 0.1);
+                display: flex;
+                justify-content: space-around;
+}
+
+.menu{
+                padding: 0px;
+                font-family: "Inter";
+                color: rgb(4, 5, 6);
+    }
+
+header{         
+                 font-weight: bolder;
+                 font-size: large;
+                 color: rgb(11, 12, 12);
+                background-image:url(./Assets/posibleheader1v4bis1.jpg);
+                background-repeat: no-repeat;              
+                background-size: cover;
+                height:100vh;
+                background-position: top;
+                
+
+                background-attachment: fixed;
+}
+
+nav a{         
+                font-weight: bolder;
+                color: rgb(13, 13, 13);
+                text-decoration:dashed;
+                padding: 2px;
+}
+
+.headerp{
+                margin-top: 50px;
+                font-family: "Inter";
+                font-weight: bold;
+                font-size: large;
+                color:aliceblue;          
+                text-align: center;
+}
+
+.menu{
+                position: sticky;
+                display: inline-block;
+                padding: 5px;
+}
+
+
+.salidas-titulo{padding-top: 5px;
+                text-align: center;
+                font-size: larger;
+                font-family: "Inter";
+                color: rgb(7, 7, 7);}
+
+.salidas-parrafo{
+                padding:10px;
+                padding-top: 50px;
+                line-height: 30px;
+                text-align: center;
+                font-size: large;
+                font-family: "Inter";
+                color: rgb(7, 7, 7);
+}
+
+.card{          padding-top: 5px;
+                display: grid;
+                grid-template-areas: 
+                "card__img card__title"
+                "card__img card__text"
+                "card__img button";
+                grid-template-rows:10% 70% 20%;
+                grid-template-columns:25% 75% ;
+                margin: 0px auto;
+                height:auto;
+                padding: 10px;
+                background-color: rgb(233, 232, 232);
+                border-radius: 50px;
+                margin:10px 20px;
+                width:90%;
+                height:90%;
+}
+
+.card__img{     grid-area:card__img;
+                justify-content: center;
+                margin: 0px auto;
+                width:185px;
+                height:185px;
+                border-radius: 100vh;
+                object-fit: cover;  
+}
+
+
+.card__title{   grid-area: card__title;
+                text-align: center;
+                font-size: 20px;
+}
+
+.card__text{    
+                padding-top: 20px;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                grid-area: card__text;
+                text-align: left;
+                
+                
+                
+}
+
+.button{        
+                justify-content: left;
+                grid-area: button;
+                height: fit-content;
+                width   : fit-content;
+                margin: 5px auto;
+                border: solid;
+                color:black;
+                font-weight: bold;
+                text-decoration: none;
+                padding:5px;
+                border-radius:8px;
+}
+
+footer{
+                height: 220px;
+                background-image:url(./Assets/Wineback.jpg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-size: cover;
+                line-height: 60px;
+                font-family: "Inter";
+}
+
+footer a {
+
+                color: rgb(11, 12, 12);;
+                text-decoration:underline;
+                font-weight:bold;
+                padding: 1px;
+    }
+
+.footer__text{
+                padding: 10px;
+                color: rgb(11, 12, 12);
+        }
+
+/* ----------------Seccion Valle de UCO--------------------------*/
+
+
+
+#headerUco{
+    background-image:url(./Assets/Valledeuco17.jpg);
+
+                background-repeat: no-repeat;
+                background-size:cover;
+                background-position: top;
+                height: 100vh;
+                background-attachment: fixed;
+    }
+
+
+.textoseccion{  grid-area: texto;
+                text-decoration:wavy;
+                padding-top: 100px;
+                margin-top: 20px;
+                font-family: "Inter";
+                font-size: large;
+                color: rgb(11, 12, 12);
+                text-align: center;
+                line-height: 25px;
+}
+
+
+/* ----------------Seccion Lujan de Cuyo--------------------------*/
+#headerCuyo{
+                background-image:url(./Assets/Lujandecuyo2.jpg);
+                background-repeat: no-repeat;
+                background-size:cover;
+                height: 100vh;
+                background-attachment: fixed;
+}
+
+.headerpcuyo{
+                text-decoration:wavy;
+                padding: 10px;
+                margin-top: 20px;
+                font-family: "Inter";
+                font-weight: bolder;
+                font-size: larger;
+                color: rgb(11, 12, 12);
+                height: 80vh;
+                width: 85vh;
+                text-align: center;
+                line-height: 25px;
+}
+
+
+/* ----------------Seccion Olivos de Maipu--------------------------*/
+#headerMaipu{
+                background-image:url(./Assets/olivosmaipu9.jpg);
+                background-repeat: no-repeat;
+                background-size:cover;
+                height: 100vh;
+                background-attachment: fixed;
+}
+
+.headerpmaipu{
+                text-decoration:wavy;
+                padding: 10px;
+                margin-top: 20px;
+                font-family: "Inter";
+                font-weight: bolder;
+                font-size: larger;
+                color: rgb(11, 12, 12);
+                height: 80vh;
+                width: 85vh;
+                text-align: center;
+                line-height: 25px;
+}
+
+/* ----------------Seccion Contacto--------------------------*/
+#headerContacto{
+
+                 background-image:url(./Assets/Valledeuco14.jpg);
+                 background-repeat: no-repeat;
+                 background-size: cover;
+                 height: 100vh;
+                 background-attachment: fixed;
+   }
+
+#formulario{  
+                 display: flex;
+                 flex-direction:row;
+                 justify-content: space-around;
+}
+
+.titulocontacto{
+                 font-size:x-large;
+}
+
+.newsletter{
+                 width: 60vh;
+}
+
+
+.titulocontacto{text-align: center;}
+
+/* -----------------SECCIONES BODEGAS X3-------------------------*/
+.card__bodega{
+                 display: flex;
+                 margin: 0px auto;
+                 height:auto;
+                 padding: 20px;
+                 background-color: rgb(233, 232, 232);
+                 border-radius: 50px;
+                 margin:20px 40px;
+                 width:90%;
+                 height:90%;
+                 align-items: center;
+   
+    }
+    
+.card__img_bodega{
+                flex-direction:row;
+                display: block;
+                margin: 0px auto;
+                width:200px;
+                height:200px;
+                border-radius: 100vh;
+                object-fit: cover;  
+    }
+    
+    
+.card__title__bodega{
+                 margin:0 15px 0 0;
+                 text-align: top;
+    }
+
+.card__text__bodega{
+                text-align: center;
+}
+
+.bodega-titulo{
+                padding-top: 10px;
+                text-align: center;
+                font-size: larger;
+                font-family: "Inter";
+                color: rgb(11, 12, 12);
+}
+        
+.parrafocierre{grid-area: parrafoCierre;
+                text-align: center;
+                font-size: larger;
+                font-family: "Inter";
+                color: rgb(11, 12, 12);
+}
+.parrafocierre a{
+                text-align: center;
+                font-size: larger;
+                font-family: "Inter";
+                text-decoration: underline;
+                color: rgb(11, 12, 12);
+}
+
+.mainCointainerSecciones{
+                display: grid;
+                grid-template-areas:
+                "texto bodagastitulo"
+                "texto bodega1"
+                "texto bodega2"
+                "texto bodega3"
+                "parrafoCierre parrafoCierre";
+                grid-template-rows:10% 27% 27% 27% 10%;
+                grid-template-columns:30% 70% ;
+}
+.bodegastitulo{
+                margin: 0;
+                grid-area: bodagastitulo;
+}
+
+.bodega1{
+                grid-area: bodega1;
+}
+
+.bodega2{
+                grid-area: bodega2;
+}
+
+.bodega3{
+                grid-area: bodega3;
+}
+
+
+
+
+@media (max-width:1180px)       {
+
+header{         
+                background-size:contain;
+                height:450px;
+            }
+
+#headerUco{    
+                background-size:contain;
+                height:450px;
+            }
+
+#headerMaipu{   
+                background-size:contain;
+                height:450px;
+            }
+
+#headerCuyo{
+                background-size:contain;
+                height:450px;
+                }
+
+#headerContacto{background-size:contain;
+                height:450px;
+                }
+
+
+
+.titulo-pricipal{font-size: 45px;
+                padding-top: 15px;
+                }
+    
+nav a{          font-size: small;
+}
+    
+.mainCointainer{
+
+                height: 2000px;
+                display: grid;
+                grid-template-areas: 
+                "salidasTitulo"
+                "parrafoInicio"
+                "salidaUco "
+                "salidaMaipu "
+                "salidaMaipu "
+                ;
+                grid-template-rows:3% 16% 27% 27% 27% ;
+                grid-template-columns:100% ;
+}
+
+.salidas-parrafo{
+                font-size: 22px;
+                padding-top: 20;
+                line-height: 23px;
+}
+
+.salidas-titulo{
+                font-size: 24px;
+}
+.card{
+                margin-top: 0px;
+                grid-template-areas: 
+                "card__img card__title"
+                "card__img card__text"
+                "card__img button";
+                grid-template-rows:10% 70% 20%;
+                grid-template-columns:50% 50% ;
+                margin:10px 20px;
+                width: 750;
+                height:500;
+}
+.card__text{
+                width: fit-content;
+                font-size: 25px;
+    
+}
+.card__title{
+                font-size: 30px;
+}
+.button{
+                margin-top: 20px;
+                font-size: 12px;
+}
+.card__img{     grid-area:card__img;
+                justify-content: center;
+                margin: 50px auto;
+                width:370px;
+                height:370px;
+                border-radius: 100vh;
+                object-fit: cover;  }
+
+.mainCointainerSecciones{
+                height: 2000px;
+                display: grid;
+                grid-template-areas:
+                "bodagastitulo"
+                "texto"
+                "bodega1"
+                "bodega2"
+                "bodega3"
+                "parrafoCierre";
+                grid-template-rows:5% 15% 25% 25% 25% 5% ;
+                grid-template-columns:100% ;
+}
+.bodegastitulo{
+                margin: 0;
+                grid-area: bodagastitulo;
+                font-size:10px;
+}
+.bodega-titulo{
+                font-size: 20px;
+}
+.card__bodega{
+                display: flex;
+                flex-direction: row;
+                margin: 0px ;
+                height:auto;
+                padding: 10px;
+                background-color: rgb(233, 232, 232);
+                border-radius: 50px;
+                margin:10px 20px;
+                width: 750;
+                height:500;
+                align-items: center;
+}
+
+.card__img_bodega{
+                flex-direction:row;
+                display: block;
+                margin: 0px auto;
+                width:370px;
+                height:370px;
+                border-radius: 100vh;
+                object-fit: cover;  
+}
+
+
+.card__title__bodega{
+                padding-bottom: 5px;
+                font-size: medium;
+                margin:0 3px 0 0;
+                text-align: top;
+}
+
+.card__text__bodega{
+                font-size: 20px;
+                text-align: center;
+}
+
+.bodega-titulo{
+                padding-top: 2px;
+                text-align: center;
+                font-size: 20px;
+                font-family: "Inter";
+                color: rgb(11, 12, 12);
+}
+
+.parrafocierre{
+                grid-area: parrafoCierre;
+                text-align: center;
+                font-size: medium;
+                font-family: "Inter";
+                color: rgb(11, 12, 12);
+}
+.parrafocierre a{
+                text-align: center;
+                font-size: larger;
+                font-family: "Inter";
+                text-decoration: underline;
+                color: rgb(11, 12, 12);
+}
+.textoseccion{
+                padding-top: 10px;
+                font-size:20px;
+                line-height: 25px;
+}
+.bodega-titulo{
+                font-size: 25px;
+                height: fit-content;
+}
+footer{
+                background-size: cover;
+}
+.footer__text{
+                font-size: 15px;
+}
+    
+#formulario{
+                flex-direction: column;            
+            }
+.newsletter{
+                width: fit-content;
+            }
+
+}
+
+@media (max-width:768px){
+.titulo{
+                font-size: 12px;
+}
+.logo{
+                font-size: 15px;
+}
+
+header{
+                background-size:contain;
+                height:220px;
+        }
+
+#headerUco{
+                background-size:contain;
+                height:220px;
+            }
+
+#headerMaipu{
+                background-size:contain;
+                height:220px;
+                }
+
+#headerCuyo{
+                background-size:contain;
+                height:220px;
+                }
+
+#headerContacto{
+                background-size:contain;
+                height:220px;
+                }
+
+
+.titulo-pricipal{
+                font-size: 20px;
+                padding-top: 40px;
+                }
+    
+nav a{          
+                font-size: 10px;
+                }
+    
+.mainCointainer{
+                height: 910px;
+                display: grid;
+                grid-template-areas: 
+                "salidasTitulo"
+                "parrafoInicio"
+                "salidaUco "
+                "salidaMaipu "
+                "salidaCuyo" 
+                ;
+                grid-template-rows:6% 22% 24% 24% 24% ;
+                grid-template-columns:100% ;
+}
+
+.salidas-parrafo{
+                font-size: 12px;
+                padding: 0;
+                line-height: 17px;
+}
+
+.salidas-titulo{
+                grid-area: salidasTitulo;
+                font-size: 15px;
+}
+.card{
+                grid-template-areas: 
+                "card__img card__title"
+                "card__img card__text"
+                "card__img button";
+                grid-template-rows:5% 72% 23%;
+                grid-template-columns:50% 50% ;
+                margin:10px 20px;
+                width: 320;
+                height:200;
+}
+.card__title{
+                font-size: 10px;
+}
+.card__text{
+                width: fit-content;
+                font-size: 10px;  
+}
+.button{
+                margin-bottom: 10px;
+}
+.card__img{     
+                grid-area:card__img;
+                justify-content: center;
+                margin: 0px auto;
+                width:150px;
+                height:150px;
+                border-radius: 100vh;
+                object-fit: cover;  
+}
+.mainCointainerSecciones{
+                height:930px;
+                display: grid;
+                grid-template-areas:
+                "bodagastitulo"
+                "texto"
+                "bodega1"
+                "bodega2"
+                "bodega3"
+                "parrafoCierre";
+                grid-template-rows:1% 23% 25% 25% 25% 1% ;
+                grid-template-columns:100% ;
+}
+.bodegastitulo{
+                margin: 0;
+                grid-area: bodagastitulo;
+                font-size:10px;
+}
+.bodega-titulo{
+                font-size: 10px;
+}
+.card__bodega{
+                display: flex;
+                flex-direction: row;
+                margin: 0px ;
+                height:auto;
+                padding: 10px;
+                background-color: rgb(233, 232, 232);
+                border-radius: 50px;
+                margin:10px 20px;
+                width: 320;
+                height:200;
+                align-items: center;
+
+}
+
+.card__img_bodega{
+                flex-direction:row;
+                display: block;
+                margin: 0px auto;
+                width:100px;
+                height:100px;
+                border-radius: 100vh;
+                object-fit: cover;  
+}
+
+
+.card__title__bodega{
+                padding-bottom: 5px;
+                font-size: medium;
+                margin:0 3px 0 0;
+                text-align: top;
+}
+
+.card__text__bodega{
+
+                font-size: 10px;
+                text-align: center;
+}
+
+.bodega-titulo{
+  
+                text-align: center;
+                font-size: 15px;
+                font-family: "Inter";
+                color: rgb(11, 12, 12);
+}
+
+.parrafocierre{
+                grid-area: parrafoCierre;
+                text-align: center;
+                font-size: medium;
+                font-family: "Inter";
+                color: rgb(11, 12, 12);
+}
+.parrafocierre a{
+                text-align: center;
+                font-size: larger;
+                font-family: "Inter";
+                text-decoration: underline;
+                color: rgb(11, 12, 12);
+}
+.textoseccion{
+                padding-top: 15px;
+                font-size:10px;
+                line-height: 20px;
+}
+.bodegastitulo{
+                font-size: medium;
+                height: fit-content;
+}
+footer{
+                background-size: contain;
+            }
+.footer__text{
+                font-size: 15px;
+    }
+#formulario{
+                flex-direction: column;
+    }
+.newsletter{
+                width: fit-content;
+    }
+}
+
