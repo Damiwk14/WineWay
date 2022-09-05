@@ -17,42 +17,6 @@ li{list-style:none ;}
                  padding-top: 50px;
 }
 
-.mainCointainer{
-
-                height: 120vh;
-                display: grid;
-                grid-template-areas: 
-                "parrafoInicio salidasTitulo"
-                "parrafoInicio salidaUco"
-                "parrafoInicio salidaMaipu"
-                "parrafoInicio salidaCuyo"
-                ;
-
-                grid-template-rows:10% 30% 30% 30% ;
-                grid-template-columns:30% 70% ;
-}
-
-#parrafoInicio{
-                transform: translateY(50px);
-                grid-area: parrafoInicio;
-}
-
-#salidasTitulo{
-                transform: translateX(-200px);
-                grid-area: salidasTitulo;
-}
-
-#salidaUco{
-                grid-area: salidaUco;
-}
-
-#salidaMaipu{
-                grid-area: salidaMaipu;
-}
-
-#salidaCuyo{
-                grid-area: salidaCuyo;
-}
 
 .logo{
                 font-family: "Caveat";
@@ -62,11 +26,11 @@ li{list-style:none ;}
                 font-size: 35px;
 }
 
-.titulo{
-                color: rgb(11, 12, 12);
+.navbar-brand{        
+                color: rgb(45, 4, 48);
                 text-decoration:dashed;
-                font-size: smaller; 
-                font-family: "Inter";
+                font-size:xx-large; 
+                font-family: "caveat";
                 text-align: center;
             }
  
@@ -84,13 +48,15 @@ body{
                 width   : fit-content;
 }
 
-nav{
-                margin:4px 0;
-                position: sticky;
+.navbar{        
                 background-color:rgba(74, 73, 73, 0.1);
-                display: flex;
-                justify-content: space-around;
-}
+                padding:0;
+        }
+
+.nav-link{
+    font-family: "Inter";
+
+} 
 
 .menu{
                 padding: 0px;
@@ -107,8 +73,6 @@ header{
                 background-size: cover;
                 height:100vh;
                 background-position: top;
-                
-
                 background-attachment: fixed;
 }
 
@@ -116,16 +80,7 @@ nav a{
                 font-weight: bolder;
                 color: rgb(13, 13, 13);
                 text-decoration:dashed;
-                padding: 2px;
-}
 
-.headerp{
-                margin-top: 50px;
-                font-family: "Inter";
-                font-weight: bold;
-                font-size: large;
-                color:aliceblue;          
-                text-align: center;
 }
 
 .menu{
@@ -135,8 +90,11 @@ nav a{
 }
 
 
-.salidas-titulo{padding-top: 5px;
-                text-align: center;
+.salidas-titulo{
+                font-weight: bold;
+                display: flex;
+                justify-content: center;
+                padding: 10px;
                 font-size: larger;
                 font-family: "Inter";
                 color: rgb(7, 7, 7);}
@@ -159,22 +117,21 @@ nav a{
                 "card__img button";
                 grid-template-rows:10% 70% 20%;
                 grid-template-columns:25% 75% ;
-                margin: 0px auto;
-                height:auto;
-                padding: 10px;
+                padding: 5px;
+                margin-bottom: 15px;
                 background-color: rgb(233, 232, 232 );
                 border-radius: 50px;
-                margin:10px 20px;
-                width:90%;
-                height:90%;
+                width: 730px ;
+                height: 230px ;
 }
 
 .card__img{     grid-area:card__img;
+                padding-top:15px ;
                 justify-content: center;
                 margin: 0px auto;
-                width:185px;
-                height:185px;
-                border-radius: 100vh;
+                width:160px;
+                height:160px;
+                border-radius: 1000vh;
                 object-fit: cover;
                 
                
@@ -192,7 +149,7 @@ nav a{
 }
 
 .card__text{    
-                padding-top: 20px;
+                padding-top: 15px;
                 overflow: hidden;
                 display: flex;
                 justify-content: center;
@@ -217,15 +174,34 @@ nav a{
                 border-radius:8px;
 }
 
-footer{
-                height: 220px;
-                background-image:url(./Assets/Wineback.jpg);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-size: cover;
-                line-height: 60px;
+footer{         padding: 5px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.93), rgb(165, 166, 166));
+
+                line-height: 15px;
                 font-family: "Inter";
 }
+.legal{
+    
+                line-height: 40px;
+                padding-top:15px;
+                font-family: "Inter";
+                text-decoration: solid;
+                width: 50%;
+                font-weight: bold;    
+        }
+
+.footer2{       font-family: "Inter";
+                flex-direction: column;
+            }
+
+.redes-sociales{
+                font-weight: bold;
+                padding:10px
+}
+
 
 footer a {
 
@@ -258,12 +234,12 @@ footer a {
 .textoseccion{  grid-area: texto;
                 text-decoration:wavy;
                 padding-top: 100px;
-                margin-top: 20px;
+                margin-top: 17px;
                 font-family: "Inter";
                 font-size: large;
                 color: rgb(11, 12, 12);
                 text-align: center;
-                line-height: 25px;
+                line-height: 35px;
 }
 
 
@@ -324,33 +300,38 @@ footer a {
                  background-attachment: fixed;
    }
 
-#formulario{  
-                 display: flex;
-                 flex-direction:row;
-                 justify-content: space-around;
-}
+
 
 .titulocontacto{
+                 padding:15px;
+                 display: flex;
+                 justify-content: center;
                  font-size:x-large;
 }
+.titulocontacto1{
+    padding:5px 0px;
 
+    font-size:x-large;
+}
+.nombreform{
+    padding: 15px 0;
+
+
+}
 .newsletter{
                  width: 60vh;
 }
+.botonescontacto{
 
-
-.titulocontacto{text-align: center;}
+    padding-bottom:15px;
+}
 
 /* -----------------SECCIONES BODEGAS X3-------------------------*/
-#bodegastitulo{
 
-                transform: translateX(-200px);
-}
 
 .card__bodega{
                  display: flex;
                  margin: 0px auto;
-                 height:auto;
                  padding: 20px;
                  background-color: rgb(233, 232, 232);
                  border-radius: 50px;
@@ -362,6 +343,7 @@ footer a {
     }
     
 .card__img_bodega{
+                
                 flex-direction:row;
                 display: block;
                 margin: 0px auto;
@@ -407,42 +389,12 @@ footer a {
                 color: rgb(11, 12, 12);
 }
 
-.mainCointainerSecciones{
-                display: grid;
-                grid-template-areas:
-                "texto bodagastitulo"
-                "texto bodega1"
-                "texto bodega2"
-                "texto bodega3"
-                "parrafoCierre parrafoCierre";
-                grid-template-rows:10% 27% 27% 27% 10%;
-                grid-template-columns:30% 70% ;
-}
-.bodegastitulo{
-                margin: 0;
-                grid-area: bodagastitulo;
-}
-
-.bodega1{
-                grid-area: bodega1;
-}
-
-.bodega2{
-                grid-area: bodega2;
-}
-
-.bodega3{
-                grid-area: bodega3;
-}
-
 
 
 
 @media (max-width:1180px)       {
 
-#bodegastitulo{
-        transform: translateX(20px);
-}
+
 header{         
                 background-size:contain;
                 height:450px;
@@ -475,48 +427,34 @@ header{
     
 nav a{          font-size: small;
 }
-    
-.mainCointainer{
 
-                height: 2000px;
-                display: grid;
-                grid-template-areas: 
-                "salidasTitulo"
-                "parrafoInicio"
-                "salidaUco "
-                "salidaMaipu "
-                "salidaMaipu "
-                ;
-                grid-template-rows:3% 16% 27% 27% 27% ;
-                grid-template-columns:100% ;
-}
+
 
 .salidas-parrafo{
-                transform: translateY(-50px);
+                
                 font-size: 22px;
                 padding-top: 20;
                 line-height: 23px;
 }
 
 .salidas-titulo{
-                transform: translateX(200px);
+                text-align: center;
                 font-size: 24px;
 }
 .card{
-                margin-top: 0px;
+                margin-top: 15px;
                 grid-template-areas: 
                 "card__img card__title"
                 "card__img card__text"
                 "card__img button";
                 grid-template-rows:10% 70% 20%;
                 grid-template-columns:50% 50% ;
-                margin:10px 20px;
-                width: 750;
-                height:500;
+                height: 440px  ;
+                width: 750px ;
 }
 .card__text{
                 width: fit-content;
-                font-size: 25px;
+                font-size: 23px;
     
 }
 .card__title{
@@ -524,38 +462,27 @@ nav a{          font-size: small;
 }
 .button{
                 margin-top: 20px;
-                font-size: 12px;
+                font-size: 20px;
 }
 .card__img{     grid-area:card__img;
                 justify-content: center;
-                margin: 50px auto;
-                width:370px;
-                height:370px;
                 border-radius: 100vh;
                 object-fit: cover;  
-                
+                width:340px;
+                height:340px;
             }
 
 .mainCointainerSecciones{
-                height: 2000px;
-                display: grid;
-                grid-template-areas:
-                "bodagastitulo"
-                "texto"
-                "bodega1"
-                "bodega2"
-                "bodega3"
-                "parrafoCierre";
-                grid-template-rows:5% 15% 25% 25% 25% 5% ;
-                grid-template-columns:100% ;
+                height: auto;
+                
 }
 .bodegastitulo{
                 margin: 0;
-                grid-area: bodagastitulo;
+               
                 font-size:10px;
 }
 .bodega-titulo{
-                font-size: 20px;
+                font-size: 17px;
 }
 .card__bodega{
                 display: flex;
@@ -567,7 +494,7 @@ nav a{          font-size: small;
                 border-radius: 50px;
                 margin:10px 20px;
                 width: 750;
-                height:500;
+                height:520;
                 align-items: center;
 }
 
@@ -590,7 +517,7 @@ nav a{          font-size: small;
 }
 
 .card__text__bodega{
-                font-size: 20px;
+                font-size: 18px;
                 text-align: center;
 }
 
@@ -603,7 +530,7 @@ nav a{          font-size: small;
 }
 
 .parrafocierre{
-                grid-area: parrafoCierre;
+               
                 text-align: center;
                 font-size: medium;
                 font-family: "Inter";
@@ -629,9 +556,9 @@ footer{
                 background-size: cover;
 }
 .footer__text{
-                font-size: 15px;
+                font-size: 10px;
 }
-    
+
 #formulario{
                 flex-direction: column;            
             }
@@ -641,27 +568,59 @@ footer{
 
 }
 
+.footer2{font-size: 17px;
+
+}
+
+.redes-sociales{
+             padding: 5px;
+             font-size: 17px;
+} 
+
+.legal{     font-family: "Inter";
+            text-decoration: solid;
+            flex-direction: column;
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+        .footer__text{
+            font-size: 17px;
+}
+
+
+
+
 @media (max-width:768px){
 
-#bodegastitulo{
-        transform: translateX(10px);
+.navbar{height:40px;
+    background-color:rgba(74, 73, 73, 0.1);
+    font-size: 15px;}
+.navbar-brand{
+    font-size: 20px;
 }
+.nav-link{  padding: 0px;
+            margin: 0px;
+            text-decoration: dashed;
 
-.titulo{
-                font-size: 12px;
+            font-weight: bolder;
+            }
+
+.titulo{        
+                font-size: 10px;
 }
 .logo{
-                font-size: 15px;
+                font-size: 10px;
 }
 
 header{
                 background-size:contain;
-                height:220px;
+                height:250px;
         }
 
 #headerUco{
                 background-size:contain;
-                height:220px;
+                height:250px;
             }
 
 #headerMaipu{
@@ -681,31 +640,25 @@ header{
 
 
 .titulo-pricipal{
+                display: flex;
+                justify-content: right;
+                padding-top: 0px;
                 font-size: 20px;
-                padding-top: 40px;
+                
+                padding-right: 2px;
+                font-weight: bolder;
                 }
     
 nav a{          
                 font-size: 10px;
                 }
     
-.mainCointainer{
-                height: 910px;
-                display: grid;
-                grid-template-areas: 
-                "salidasTitulo"
-                "parrafoInicio"
-                "salidaUco "
-                "salidaMaipu "
-                "salidaCuyo" 
-                ;
-                grid-template-rows:6% 22% 24% 24% 24% ;
-                grid-template-columns:100% ;
-}
+
 
 .salidas-parrafo{
+
                 font-size: 12px;
-                padding: 0;
+                padding: 10px;
                 line-height: 17px;
 }
 
@@ -720,19 +673,19 @@ nav a{
                 "card__img button";
                 grid-template-rows:5% 72% 23%;
                 grid-template-columns:50% 50% ;
-                margin:10px 20px;
-                width: 320;
-                height:200;
+                width: 390px ;
+                height: 200px ;
+
 }
-.card__title{
+.card__title{   font-weight: bold;
                 font-size: 10px;
 }
 .card__text{
                 width: fit-content;
                 font-size: 10px;  
 }
-.button{
-                margin-bottom: 10px;
+.button{        font-size: 7px;
+                
 }
 .card__img{     
                 grid-area:card__img;
@@ -745,21 +698,12 @@ nav a{
                  
 }
 .mainCointainerSecciones{
-                height:930px;
-                display: grid;
-                grid-template-areas:
-                "bodagastitulo"
-                "texto"
-                "bodega1"
-                "bodega2"
-                "bodega3"
-                "parrafoCierre";
-                grid-template-rows:1% 23% 25% 25% 25% 1% ;
-                grid-template-columns:100% ;
+                height:auto;
+            
 }
 .bodegastitulo{
                 margin: 0;
-                grid-area: bodagastitulo;
+                
                 font-size:10px;
 }
 .bodega-titulo{
@@ -769,13 +713,12 @@ nav a{
                 display: flex;
                 flex-direction: row;
                 margin: 0px ;
-                height:auto;
                 padding: 10px;
                 background-color: rgb(233, 232, 232);
                 border-radius: 50px;
                 margin:10px 20px;
-                width: 320;
-                height:200;
+                width: 90%;
+                height:20vh;
                 align-items: center;
 
 }
@@ -813,7 +756,6 @@ nav a{
 }
 
 .parrafocierre{
-                grid-area: parrafoCierre;
                 text-align: center;
                 font-size: medium;
                 font-family: "Inter";
@@ -836,16 +778,35 @@ nav a{
                 height: fit-content;
 }
 footer{
-                background-size: contain;
+                background-size: cover;
             }
+
 .footer__text{
-                font-size: 15px;
+                font-size: 10px;
     }
+
 #formulario{
                 flex-direction: column;
     }
+
 .newsletter{
                 width: fit-content;
     }
+    .footer2{font-size: 10px;
+
+    }
+
+    .redes-sociales{
+                 padding: 3px;
+                 font-size: 10px;
+} 
+
+    .legal{     font-family: "Inter";
+                text-decoration: solid;
+                flex-direction: column;
+                
+                font-size: 5px;
+                line-height: 10px;
+            }
 }
 
