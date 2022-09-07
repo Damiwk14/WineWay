@@ -542,7 +542,7 @@ nav a{          font-size: small;
                 border-radius: 50px;
                 margin:10px 20px;
                 width: 750;
-                height:520;
+                height:540;
                 align-items: center;
 }
 
@@ -650,6 +650,7 @@ footer{
 .navbar{height:40px;
     background-color:rgba(74, 73, 73, 0.1);
     font-size: 15px;}
+
 .navbar-brand{
     font-size: 20px;
 }
@@ -773,7 +774,7 @@ nav a{
                 border-radius: 50px;
                 margin:10px 20px;
                 width: 90%;
-                height:20vh;
+                height:22vh;
                 align-items: center;
 
 }
