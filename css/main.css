@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Inter&display=swap");
+footer {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: linear-gradient(to bottom, #A9B4C2, #EEF1EF);
+  line-height: 15px;
+  font-family: "Inter"; }
+  footer a {
+    color: #0b0c0c;
+    text-decoration: underline;
+    font-weight: bold;
+    padding: 1px; }
+  footer .legal {
+    line-height: 30px;
+    padding-top: 15px;
+    font-family: "Inter";
+    text-decoration: solid;
+    width: 30%;
+    font-weight: 600; }
+  footer .footer2 {
+    font-family: "Inter";
+    flex-direction: column; }
+  footer .redes-sociales {
+    font-weight: bold;
+    padding: 10px; }
+    footer .redes-sociales:hover {
+      transform: scale(1.02);
+      transition: all 0.3s ease; }
+  footer .footer__text {
+    padding: 10px;
+    color: #0b0c0c; }
+
+li {
+  list-style: none; }
+
+.titulo {
+  color: #0b0c0c;
+  height: fit-content;
+  width: fit-content; }
+
+header {
+  font-weight: bolder;
+  font-size: large;
+  color: #0b0c0c;
+  background-image: url(../Assets/posibleheader1v4bis1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: top;
+  background-attachment: fixed; }
+  header .logo {
+    font-family: "Caveat";
+    border: none;
+    color: #0b0c0c;
+    text-decoration: dashed;
+    font-size: 35px; }
+
+#headerMaipu {
+  background-image: url(../Assets/olivosmaipu9.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed; }
+
+#headerUco {
+  background-image: url(../Assets/Valledeuco17.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+  background-attachment: fixed; }
+
+#headerCuyo {
+  background-image: url(../Assets/Lujandecuyo2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed; }
+
+#headerContacto {
+  background-image: url(../Assets/Valledeuco14.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed; }
+
+.titulo-pricipal {
+  width: fit-content;
+  font-family: "Caveat";
+  border: none;
+  color: #0b0c0c;
+  text-decoration: dashed;
+  font-size: 85px;
+  padding-left: 20px;
+  padding-top: 50px;
+  animation-name: movimientosmisc;
+  animation-duration: 0.55s;
+  animation-timing-function: ease-in; }
+
+@keyframes movimientosmisc {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0px);
+    opacity: 1; } }
+
+h1:hover {
+  transform: translateY(15px);
+  transition: all 0.3s ease; }
+
+.navbar {
+  padding: 0; }
+  .navbar .navbar-brand {
+    color: #2d0430;
+    text-decoration: dashed;
+    font-size: xx-large;
+    font-family: "caveat";
+    text-align: center; }
+    .navbar .navbar-brand:hover {
+      transform: scale(1.06);
+      transition: all 0.3s ease; }
+  .navbar .nav-link {
+    font-family: "Inter"; }
+  .navbar .nav-item:hover {
+    transform: scale(1.03);
+    transition: all 0.3s ease; }

@@ -1,131 +1,17 @@
 *{margin:0;
 padding:0;}
 
-
-li{list-style:none ;}
-
-h1:hover{
-                 transform: translateY(15px);
-                 transition: all 0.3s ease;
-
-}
-
-@keyframes movimientosmisc{
-
-    0%{
-                 transform:translateY(-50px);
-                 opacity:0;
-    }
-    100%{
-                 transform: translateY(0px);
-                 opacity:1;
-
-    }
-}
-
-.titulo-pricipal{
-   
-                 width: fit-content;
-                 font-family: "Caveat";
-                 border: none;
-                 color: rgb(11, 12, 12);
-                 text-decoration:dashed;
-                 font-size: 85px;
-                 padding-left: 20px;
-                 padding-top: 50px;
-                 animation-name: movimientosmisc;
-                 animation-duration: 0.55s;
-                 animation-timing-function:ease-in;
-
-
-
-}
-
-
-.logo{
-                font-family: "Caveat";
-                border: none;
-                color: rgb(11, 12, 12);
-                text-decoration:dashed;
-                font-size: 35px;
-}
-
-.navbar-brand:hover{
-                transform: scale(1.06);
-                transition: all 0.3s ease;  
-                color: rgb(45, 4, 48); 
-
-}
-
-.nav-item:hover{
-                transform: scale(1.03);
-                transition: all 0.3s ease; 
-
-}
-
-.navbar-brand{        
-                color: rgb(45, 4, 48);
-                text-decoration:dashed;
-                font-size:xx-large; 
-                font-family: "caveat";
-                text-align: center;
-            }
- 
-
 body{
                 font-family: "Inter";
                 
                 background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.93), rgb(165, 166, 166));
                 
 }
-
-.titulo{
-                color: rgb(11, 12, 12);        
-                height: fit-content;
-                width   : fit-content;
-}
-
-.navbar{        
-                background-color:rgba(74, 73, 73, 0.1);
-                padding:0;
-        }
-
-.nav-link{
-                font-family: "Inter";
-} 
-
-.menu{
-                padding: 0px;
-                font-family: "Inter";
-                color: rgb(4, 5, 6);
-    }
-
-header{         
-                font-weight: bolder;
-                font-size: large;
-                color: rgb(11, 12, 12);
-                background-image:url(./Assets/posibleheader1v4bis1.jpg);
-                background-repeat: no-repeat;              
-                background-size: cover;
-                height:100vh;
-                background-position: top;
-                background-attachment: fixed;
-}
-
-nav a{         
-                font-weight: bolder;
-                color: rgb(13, 13, 13);
-                text-decoration:dashed;
-
-}
-
 .menu{
                 position: sticky;
                 display: inline-block;
                 padding: 5px;
 }
-
-
 .salidas-titulo{
                 font-weight: bold;
                 display: flex;
@@ -217,135 +103,14 @@ nav a{
                 border-width:initial;
 }
 
-footer{         padding: 5px;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.93), rgb(165, 166, 166));
-                line-height: 15px;
-                font-family: "Inter";
-}
-.legal{
-                line-height: 30px;
-                padding-top:15px;
-                font-family: "Inter";
-                text-decoration: solid;
-                width: 30%;
-                font-weight:600;    
-}
 
-
-.footer2{       font-family: "Inter";
-                flex-direction: column;
-            }
-
-.redes-sociales{
-                font-weight: bold;
-                padding:10px
-}
-.redes-sociales:hover{
-                transform: scale(1.02);
-                transition: all 0.3s ease;  
-}
-
-footer a {
-
-                color: rgb(11, 12, 12);;
-                text-decoration:underline;
-                font-weight:bold;
-                padding: 1px;
-    }
-
-.footer__text{
-                padding: 10px;
-                color: rgb(11, 12, 12);
-        }
 
 /* ----------------Seccion Valle de UCO--------------------------*/
 
 
-
-#headerUco{
-    background-image:url(./Assets/Valledeuco17.jpg);
-
-                background-repeat: no-repeat;
-                background-size:cover;
-                background-position: top;
-                height: 100vh;
-                background-attachment: fixed;
-    }
-
-
-.textoseccion{  grid-area: texto;
-                text-decoration:wavy;
-                padding-top: 20px;
-                font-weight: 450;
-                font-family: "Inter";
-                font-size: large;
-                color: rgb(11, 12, 12);
-                text-align: center;
-                line-height: 35px;
-}
-
-
 /* ----------------Seccion Lujan de Cuyo--------------------------*/
-#headerCuyo{
-                background-image:url(./Assets/Lujandecuyo2.jpg);
-                background-repeat: no-repeat;
-                background-size:cover;
-                height: 100vh;
-                background-attachment: fixed;
-}
-
-.headerpcuyo{
-                text-decoration:wavy;
-                padding: 10px;
-                margin-top: 20px;
-                font-family: "Inter";
-                font-weight: bolder;
-                font-size: larger;
-                color: rgb(11, 12, 12);
-                height: 80vh;
-                width: 85vh;
-                text-align: center;
-                line-height: 25px;
-}
-
-
 /* ----------------Seccion Olivos de Maipu--------------------------*/
-#headerMaipu{
-                background-image:url(./Assets/olivosmaipu9.jpg);
-                background-repeat: no-repeat;
-                background-size:cover;
-                height: 100vh;
-                background-attachment: fixed;
-}
-
-.headerpmaipu{
-                text-decoration:wavy;
-                padding: 10px;
-                margin-top: 20px;
-                font-family: "Inter";
-                font-weight: bolder;
-                font-size: larger;
-                color: rgb(11, 12, 12);
-                height: 80vh;
-                width: 85vh;
-                text-align: center;
-                line-height: 25px;
-}
-
 /* ----------------Seccion Contacto--------------------------*/
-#headerContacto{
-
-                 background-image:url(./Assets/Valledeuco14.jpg);
-                 background-repeat: no-repeat;
-                 background-size: cover;
-                 height: 100vh;
-                 background-attachment: fixed;
-   }
-
-
 
 .titulocontacto{
                  padding:15px;
@@ -369,7 +134,16 @@ footer a {
 }
 
 /* -----------------SECCIONES BODEGAS X3-------------------------*/
-
+.textoseccion{  grid-area: texto;
+    text-decoration:wavy;
+    padding-top: 20px;
+    font-weight: 450;
+    font-family: "Inter";
+    font-size: large;
+    color: rgb(11, 12, 12);
+    text-align: center;
+    line-height: 35px;
+}
 
 .card__bodega{
                  display: flex;

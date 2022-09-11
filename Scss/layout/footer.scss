@@ -1,0 +1,43 @@
+footer{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom, $color4,$color5);
+    line-height: 15px;
+    font-family: "Inter";
+
+    a {
+        color: rgb(11, 12, 12);;
+        text-decoration:underline;
+        font-weight:bold;
+        padding: 1px;
+    }
+
+    .legal{
+        line-height: 30px;
+        padding-top:15px;
+        font-family: "Inter";
+        text-decoration: solid;
+        width: 30%;
+        font-weight:600;    
+    }
+    .footer2{       
+        font-family: "Inter";
+        flex-direction: column;
+    }
+    .redes-sociales{
+        font-weight: bold;
+        padding:10px;
+        &:hover{
+        transform: scale(1.02);
+        transition: all 0.3s ease;  }
+}
+    .footer__text{
+    padding: 10px;
+    color: rgb(11, 12, 12);
+}
+
+}
+
+
