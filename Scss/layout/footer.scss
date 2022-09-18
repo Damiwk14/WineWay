@@ -17,9 +17,9 @@ footer{
     .legal{
         line-height: 30px;
         padding-top:15px;
-        font-family: "Inter";
+        font-family: $secondary-typography;
         text-decoration: solid;
-        width: 30%;
+        width: 60%;
         font-weight:600;    
     }
     .footer2{       
@@ -39,5 +39,71 @@ footer{
 }
 
 }
+
+@media (max-width:1180px)       {
+
+            footer{
+                        background-size: cover;
+                    
+            .footer__text{
+                        font-size: 10px;
+            }
+            .footer2{
+                        font-size: 17px;
+                    }
+                    
+                        
+                    
+            .redes-sociales{
+                        padding: 5px;
+                        font-size: 17px;
+                    } 
+                    
+            .legal{     
+                        font-family: "Inter";
+                        text-decoration: solid;
+                        flex-direction: column;
+                        font-size: 15px;
+                        line-height: 20px;
+                            }
+                    
+            .footer__text{
+                         font-size: 17px;
+                    }
+        
+        
+        
+                }
+    
+    }
+
+    @media (max-width:768px){
+
+        footer{
+                        background-size: cover;
+                    
+
+        .footer__text{
+                        font-size: 10px;
+                }
+            
+        .footer2{
+                        font-size: 10px;
+                }
+            
+        .redes-sociales{
+                        padding: 3px;
+                        font-size: 10px;
+            } 
+            
+                .legal{     
+                        font-family: $secondary-typography;
+                        text-decoration: solid;
+                        flex-direction: column;
+                        font-size: 8px;  
+                        }
+                    }
+        }
+        
 
 

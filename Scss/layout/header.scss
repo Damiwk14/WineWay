@@ -23,46 +23,34 @@ header{
     }
 }
 
-#headerMaipu{
+#headerMaipu{   
+                @extend header;
                 background-image:url(../Assets/olivosmaipu9.jpg);
-                background-repeat: no-repeat;
-                background-size:cover;
-                height: 100vh;
-                background-attachment: fixed;
+
 }
 
-#headerUco{
+#headerUco{     
+                @extend header;
                 background-image:url(../Assets/Valledeuco17.jpg);
-                background-repeat: no-repeat;
-                background-size:cover;
-                background-position: top;
-                height: 100vh;
-                background-attachment: fixed;
     }
 
-#headerCuyo{
+#headerCuyo{    
+                @extend header;
                 background-image:url(../Assets/Lujandecuyo2.jpg);
-                background-repeat: no-repeat;
-                background-size:cover;
-                height: 100vh;
-                background-attachment: fixed;
 }
 
 #headerContacto{
+                @extend header;
+                background-image:url(../Assets/Valledeuco14.jpg);
 
-    background-image:url(../Assets/Valledeuco14.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    background-attachment: fixed;
 }
 .titulo-pricipal{
                  width: fit-content;
-                 font-family: "Caveat";
+                 font-family: $primary-typography;
                  border: none;
                  color: rgb(11, 12, 12);
                  text-decoration:dashed;
-                 font-size: 85px;
+                 font-size: map-get($font-sz,xxl);
                  padding-left: 20px;
                  padding-top: 50px;
                  animation-name: movimientosmisc;
@@ -78,12 +66,10 @@ header{
                                  opacity:1;
                     }
                 }
-}
-
-h1:hover{
-    transform: translateY(15px);
-    transition: all 0.3s ease;
-
+                &:hover{
+                    transform: translateY(15px);
+                    transition: all 0.3s ease; 
+                }
 }
 
 .navbar{                
@@ -109,3 +95,104 @@ h1:hover{
 }
 
 }
+
+
+@media (max-width:1180px)       {
+    .nav-link{  
+        display: flex;
+        padding: 0px;
+        margin: 0px;
+        text-decoration: dashed;
+        justify-content: right;
+        font-weight: bolder;
+        }
+
+    header{         
+                    background-size:contain;
+                    height:30vh;
+                }
+    
+    #headerUco{    
+                    background-size:contain;
+                    height:450px;
+                }
+    
+    #headerMaipu{   
+                    background-size:contain;
+                    height:450px;
+                }
+    
+    #headerCuyo{
+                    background-size:contain;
+                    height:450px;
+                    }
+    
+    #headerContacto{background-size:contain;
+                    height:450px;
+                    }
+                }    
+
+
+
+
+@media (max-width:768px){
+
+                    .navbar{height:40px;
+                    
+                        font-size: 15px;}
+                    
+                    .navbar-brand{
+                        font-size: 20px;
+                    }
+                    .nav-link{  padding: 0px;
+                                margin: 0px;
+                                text-decoration: dashed;
+                                margin-inline-end: 0px;
+                                font-weight: bolder;
+                                font-size: 10px;
+                                }
+                    
+                    .titulo{        
+                                    font-size: 10px;
+                    }
+                    .logo{
+                                    font-size: 10px;
+                    }
+                    
+                    header{
+                                    background-size:contain;
+                                    height:250px;
+                            }
+                    
+                    #headerUco{
+                                    background-size:contain;
+                                    height:250px;
+                                }
+                    
+                    #headerMaipu{
+                                    background-size:contain;
+                                    height:220px;
+                                    }
+                    
+                    #headerCuyo{
+                                    background-size:contain;
+                                    height:220px;
+                                    }
+                    
+                    #headerContacto{
+                                    background-size:contain;
+                                    height:220px;
+                                    }
+                    
+                    
+.titulo-pricipal{
+    display: flex;
+    justify-content: right;
+    padding-top: 20px;
+    font-size: 35px;
+    padding-right: 2px;
+    font-weight: bolder;
+    }
+
+
+                                }            
