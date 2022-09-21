@@ -214,7 +214,7 @@
 
 body {
   font-family: "Inter";
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.93), #a5a6a6); }
+  background-image: linear-gradient(to bottom, #A9B4C2, #EEF1EF); }
 
 .salidas-titulo {
   font-weight: bold;
@@ -234,14 +234,18 @@ body {
   font-family: "Inter";
   color: #070707; }
 
+#bodegastitulo {
+  height: 15vh; }
+
 .bodega-titulo {
+  padding-top: 10px;
   padding-bottom: 15px;
   text-align: center;
   font-size: larger;
   font-weight: bolder;
   font-family: "Inter";
   color: #0b0c0c;
-  line-height: 15px; }
+  line-height: 10px; }
 
 .textoseccion {
   text-decoration: wavy;
@@ -407,30 +411,25 @@ header, #headerMaipu, #headerUco, #headerCuyo, #headerContacto {
   font-weight: bolder;
   font-size: large;
   color: #0b0c0c;
-  background-image: url(../Assets/posibleheader1v4bis1.jpg);
+  background-image: url(../Assets/img/HeaderIndex.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   background-position: top;
   background-attachment: fixed; }
-  header .logo, #headerMaipu .logo, #headerUco .logo, #headerCuyo .logo, #headerContacto .logo {
-    font-family: "Caveat";
-    border: none;
-    color: #0b0c0c;
-    text-decoration: dashed;
-    font-size: 35px; }
 
 #headerMaipu {
-  background-image: url(../Assets/olivosmaipu9.jpg); }
+  background-color: #EEF1EF;
+  background-image: url(../Assets/img/HeaderMaipu.jpg); }
 
 #headerUco {
-  background-image: url(../Assets/Valledeuco17.jpg); }
+  background-image: url(../Assets/img/HeaderUco.jpg); }
 
 #headerCuyo {
-  background-image: url(../Assets/Lujandecuyo2.jpg); }
+  background-image: url(../Assets/img/HeaderCuyo.jpg); }
 
 #headerContacto {
-  background-image: url(../Assets/Valledeuco14.jpg); }
+  background-image: url(../Assets/img/HeaderContacto.jpg); }
 
 .titulo-pricipal {
   width: fit-content;
@@ -457,7 +456,13 @@ header, #headerMaipu, #headerUco, #headerCuyo, #headerContacto {
     transition: all 0.3s ease; }
 
 .navbar {
-  padding: 0; }
+  width: 100%;
+  height: 35px;
+  background-color: rgba(245, 245, 245, 0.987);
+  opacity: 0.9; }
+  .navbar .logo__img {
+    width: 60px;
+    height: 35px; }
   .navbar .navbar-brand {
     color: #2d0430;
     text-decoration: dashed;
@@ -495,12 +500,30 @@ header, #headerMaipu, #headerUco, #headerCuyo, #headerContacto {
     height: 450px; }
   #headerContacto {
     background-size: contain;
-    height: 450px; } }
+    height: 450px; }
+  .navbar {
+    height: 55px;
+    font-size: 15px; }
+    .navbar .navbar-toggler {
+      padding-bottom: 10px;
+      width: 45px;
+      height: 35px; }
+    .navbar .logo__img {
+      padding-bottom: 10px;
+      width: 65px;
+      height: 45px; } }
 
 @media (max-width: 768px) {
   .navbar {
     height: 40px;
     font-size: 15px; }
+    .navbar .navbar-toggler {
+      transform: translateY(-10px); }
+    .navbar .logo__img {
+      transform: translateY(-10px);
+      padding: 0;
+      width: 55px;
+      height: 35px; }
   .navbar-brand {
     font-size: 20px; }
   .nav-link {
@@ -516,7 +539,7 @@ header, #headerMaipu, #headerUco, #headerCuyo, #headerContacto {
     font-size: 10px; }
   header, #headerMaipu, #headerUco, #headerCuyo, #headerContacto {
     background-size: contain;
-    height: 250px; }
+    height: 200px; }
   #headerUco {
     background-size: contain;
     height: 250px; }
@@ -556,14 +579,36 @@ header, #headerMaipu, #headerUco, #headerCuyo, #headerContacto {
 .botonescontacto {
   padding-bottom: 15px; }
 
+.img__sobreNosotros {
+  border-radius: 50px;
+  padding: 30px;
+  width: 500px;
+  height: 575px;
+  filter: grayscale(100%); }
+  .img__sobreNosotros:hover {
+    filter: none;
+    transition: all 0.3s ease; }
+
 @media (max-width: 1180px) {
   #formulario {
     flex-direction: column; }
   .newsletter {
-    width: fit-content; } }
+    width: fit-content; }
+  .img__sobreNosotros {
+    transform: translateX(70px);
+    display: flex;
+    justify-content: center;
+    width: 540px;
+    height: 575px; } }
 
 @media (max-width: 768px) {
   #formulario {
     flex-direction: column; }
   .newsletter {
-    width: fit-content; } }
+    width: fit-content; }
+  .img__sobreNosotros {
+    transform: translateX(25px);
+    display: flex;
+    justify-content: center;
+    width: 340px;
+    height: 375px; } }

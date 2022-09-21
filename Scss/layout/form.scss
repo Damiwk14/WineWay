@@ -19,6 +19,18 @@
    padding-bottom:15px;
 }
 
+.img__sobreNosotros{
+    border-radius: 50px;
+    padding: 30px;
+    width:500px;
+    height:575px;
+    filter: grayscale(100%);
+    &:hover{filter:none;
+        transition: all 0.3s ease;
+    }
+}
+
+
 @media (max-width:1180px)       {
 
     #formulario{
@@ -26,6 +38,14 @@
                 }
     .newsletter{
                     width: fit-content;
+                }
+    .img__sobreNosotros{
+                    transform: translateX(70px);
+                    display: flex;
+                    justify-content: center;
+                    width:540px;
+                    height:575px;
+        
                 }
            
     }
@@ -41,5 +61,14 @@
                         width: fit-content;
 
         }
+        .img__sobreNosotros{
+            transform: translateX(25px);
+            display: flex;
+            justify-content: center;
+            width:340px;
+            height:375px;
+
+        }
+    
     }
     
