@@ -419,17 +419,17 @@ header, #headerMaipu, #headerUco, #headerCuyo, #headerContacto {
   background-attachment: fixed; }
 
 #headerMaipu {
-  background-color: #EEF1EF;
   background-image: url(../Assets/img/HeaderMaipu.jpg); }
 
 #headerUco {
   background-image: url(../Assets/img/HeaderUco.jpg); }
 
 #headerCuyo {
-  background-image: url(../Assets/img/HeaderCuyo.jpg); }
+  background-image: url(../Assets/img/HeaderCuyo.jpg);
+  background-position: top; }
 
 #headerContacto {
-  background-image: url(../Assets/img/HeaderContacto.jpg); }
+  background-image: url(../Assets/img/HeaderContactobis.JPEG); }
 
 .titulo-pricipal {
   width: fit-content;
@@ -456,15 +456,11 @@ header, #headerMaipu, #headerUco, #headerCuyo, #headerContacto {
     transition: all 0.3s ease; }
 
 .navbar {
-  width: 100%;
-  height: 35px;
-  background-color: rgba(245, 245, 245, 0.987);
-  opacity: 0.9; }
+  height: 80px; }
   .navbar .logo__img {
-    width: 60px;
-    height: 35px; }
+    width: 120px;
+    height: 90px; }
   .navbar .navbar-brand {
-    color: #2d0430;
     text-decoration: dashed;
     font-size: xx-large;
     font-family: "caveat";
@@ -473,10 +469,14 @@ header, #headerMaipu, #headerUco, #headerCuyo, #headerContacto {
       transform: scale(1.06);
       transition: all 0.3s ease; }
   .navbar .nav-link {
-    font-family: "Inter"; }
-  .navbar .nav-item:hover {
-    transform: scale(1.03);
-    transition: all 0.3s ease; }
+    font-weight: 900;
+    font-family: "Inter";
+    font-size: larger; }
+  .navbar .nav-item {
+    font-weight: 700; }
+    .navbar .nav-item:hover {
+      transform: scale(1.03);
+      transition: all 0.3s ease; }
 
 @media (max-width: 1180px) {
   .nav-link {
