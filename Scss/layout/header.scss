@@ -1,8 +1,8 @@
 li{list-style:none ;}
 .titulo{
-    color: rgb(11, 12, 12);        
-    height: fit-content;
-    width   : fit-content;
+                color: rgb(11, 12, 12);        
+                height: fit-content;
+                width   : fit-content;
 }
 header{         
                 font-weight: bolder;
@@ -39,7 +39,7 @@ header{
                 background-image:url(../Assets/img/HeaderContactobis.JPEG);
 
 }
-.titulo-pricipal{
+.titulo-principal{
                  width: fit-content;
                  font-family: $primary-typography;
                  border: none;
@@ -51,61 +51,59 @@ header{
                  animation-name: movimientosmisc;
                  animation-duration: 0.55s;
                  animation-timing-function:ease-in;
-                    @keyframes movimientosmisc{
-                    0%{
-                                 transform:translateY(-50px);
-                                 opacity:0;
-                    }
-                    100%{
-                                 transform: translateY(0px);
-                                 opacity:1;
-                    }
-                }
-                &:hover{
-                    transform: translateY(15px);
-                    transition: all 0.3s ease; 
-                }
+                        @keyframes movimientosmisc{
+                        0%{
+                                    transform:translateY(-50px);
+                                    opacity:0;
+                        }
+                        100%{
+                                    transform: translateY(0px);
+                                    opacity:1;
+                        }
+                        }
+                        &:hover{
+                            transform: translateY(15px);
+                            transition: all 0.3s ease; 
+                        }
 }
-
-
 
 .navbar{      
-    height: 80px;         
+                height: 80px;         
      
-        .logo__img{
-            
-            width: 120px;
-            height: 90px;
-        }
-.navbar-brand{        
-                        
-                        text-decoration:dashed;
-                        font-size:xx-large; 
-                        font-family: "caveat";
-                        text-align: center;
-                        &:hover{transform: scale(1.06);
-                            transition: all 0.3s ease;}
-                                
+                .logo__img{  
+                    width: 120px;
+                    height: 90px;
+                }
+                .navbar-brand{         
+                    text-decoration:dashed;
+                    font-size:xx-large; 
+                    font-family:$primary-typography;
+                    text-align: center;
+                    &:hover{transform: scale(1.06);
+                    transition: all 0.3s ease;}           
                     }
-.nav-link{              font-weight:900;
-                        font-family:$secondary-typography;
-                        font-size:larger;
-                        
+                .nav-link{
+                    font-weight:700;
+                    font-family:$primary-typography;
+                    font-size:x-large;                
         } 
-.nav-item{  
-            &:hover{transform: scale(1.03);
-            transition: all 0.3s ease;}
-            font-weight:700;
-            
- }
-           
-
+                .nav-item{  
+                    &:hover{transform: scale(1.03);
+                    transition: all 0.3s ease;}
+                    font-weight:700;
+        }
 }
 
 
 
 
-@media (max-width:1180px)       {
+@media (max-width:1180px){
+    .navbar-toggler{
+        transform: translateY(-20px);
+        background-color: rgba($color: #ffffff, $alpha: 0.4);
+        border:30px;}
+    .nav-item{
+        background-color: rgba($color: #ffffff, $alpha: 0.75)}
     .nav-link{  
         display: flex;
         padding: 0px;
@@ -114,118 +112,119 @@ header{
         justify-content: right;
         font-weight: bolder;
         }
-
-
     header{         
-                    background-size:contain;
-                    height:30vh;
-                }
+        background-size:contain;
+        height:30vh;
+    }
     
     #headerUco{    
-                    background-size:contain;
-                    height:450px;
+        background-size:contain;
+        height:450px;
                 }
     
     #headerMaipu{   
-                    background-size:contain;
-                    height:450px;
+        background-size:contain;
+        height:450px;
                 }
     
     #headerCuyo{
-                    background-size:contain;
-                    height:450px;
+        background-size:contain;
+        height:450px;
                     }
     
-    #headerContacto{background-size:contain;
-                    height:450px;
+    #headerContacto{
+        background-size:contain;
+        height:450px;
                     }
                 
-                .navbar{height:55px;
-                    
-                    font-size: 15px;
-                    .navbar-toggler{
-                        padding-bottom: 10px;;
-                        width: 45px;
-                        height: 35px;
+    .navbar{
+        height:55px;
+        font-size: 15px;}
+
+    .logo__img{
+        transform: translateY(-20px);
+        width: 115px;
+        height: 95px;
                     }
 
-                    .logo__img{
-                        padding-bottom: 10px;
-                        width: 65px;
-                        height: 45px;
-                    }}
+    .titulo-principal{
+        display: flex;
+        justify-content: right;
+        font-size: 45px;
+        font-weight: bolder;       
+                        }
 
-                }
+}
+                
 
 
 @media (max-width:768px){
 
-                    .navbar{height:40px;
-                    
-                        font-size: 15px;
-                    .navbar-toggler{
-                        transform:translateY(-10px);
-                        ;
+    .navbar-toggler{
+        transform: translateY(-20px);
+        background-color: rgba($color: #ffffff, $alpha: 0.4);
+        border:30px;}
+    .nav-item{
+        background-color: rgba($color: #ffffff, $alpha: 0.75)}
+    .navbar{
+        height:40px;
+    }
+    .nav-link{  
+        display: flex;
+        justify-content: right;    
+        }
+         
+    .titulo{        
+        font-size: 10px;
+    }
+    .logo{
+        font-size: 10px;
+    }
+    
+    header{
+        background-size:contain;
+        background-image:url(../Assets/img/HeaderIndex1.jpg);
+        height:200px;
+            }
+    
+    #headerUco{
+        background-image:url(../Assets/img/HeaderUco.jpg);
+        background-size:contain;
+        height:220px;
+                }
+    
+    #headerMaipu{
+        background-image:url(../Assets/img/HeaderMaipu.jpg);
+        background-size:contain;
+        height:220px;
                     }
-                        .logo__img{
-                            transform:translateY(-10px);
-                            padding: 0;
-                            width: 55px;
-                            height: 35px;
-                        }}
-                    
-                    .navbar-brand{
-                        font-size: 20px;
+    
+    #headerCuyo{
+        background-image:url(../Assets/img/HeaderCuyo.jpg);
+        background-size:contain;
+        height:220px;
                     }
-                    .nav-link{  padding: 0px;
-                                margin: 0px;
-                                text-decoration: dashed;
-                                margin-inline-end: 0px;
-                                font-weight: bolder;
-                                font-size: 10px;
-                                }
-                    
-                    .titulo{        
-                                    font-size: 10px;
-                    }
-                    .logo{
-                                    font-size: 10px;
+    
+    #headerContacto{
+        background-image:url(../Assets/img/HeaderContactobis.JPEG);
+        background-size:contain;
+        height:220px;
                     }
                     
-                    header{
-                                    background-size:contain;
-                                    height:200px;
-                            }
                     
-                    #headerUco{
-                                    background-size:contain;
-                                    height:250px;
-                                }
-                    
-                    #headerMaipu{
-                                    background-size:contain;
-                                    height:220px;
-                                    }
-                    
-                    #headerCuyo{
-                                    background-size:contain;
-                                    height:220px;
-                                    }
-                    
-                    #headerContacto{
-                                    background-size:contain;
-                                    height:220px;
-                                    }
-                    
-                    
-.titulo-pricipal{
-    display: flex;
-    justify-content: right;
-    padding-top: 20px;
-    font-size: 35px;
-    padding-right: 2px;
-    font-weight: bolder;
+.titulo-principal{
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        font-weight: 900px;
+    
     }
 
+.logo__img{
+        transform: translateY(-20px);
+        width: 50px;
+        height: 45px;
+    }
 
-                                }            
+}
+                                          

@@ -28,8 +28,19 @@
     &:hover{filter:none;
         transition: all 0.3s ease;
     }
+   
 }
-
+.img__form {
+    border-radius: 50px;
+    padding: 30px;
+    padding-top:40px;
+    width:500px;
+    height:675px;
+    filter:blur(5px);
+    &:hover{filter:none;
+        transition: all 0.3s ease;
+    }
+}
 
 @media (max-width:1180px)       {
 
@@ -40,6 +51,14 @@
                     width: fit-content;
                 }
     .img__sobreNosotros{
+                    transform: translateX(70px);
+                    display: flex;
+                    justify-content: center;
+                    width:540px;
+                    height:575px;
+        
+                }
+    .img__form{
                     transform: translateX(70px);
                     display: flex;
                     justify-content: center;
@@ -67,7 +86,13 @@
             justify-content: center;
             width:340px;
             height:375px;
-
+        }
+        .img__form{
+            transform: translateX(25px);
+            display: flex;
+            justify-content: center;
+            width:340px;
+            height:375px;
         }
     
     }

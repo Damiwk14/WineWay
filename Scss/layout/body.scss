@@ -2,8 +2,8 @@
     padding:0;}
     
 body{
-                    font-family:$secondary-typography;
-                    background-image: linear-gradient(to bottom,$color4, $color5);              
+    font-family:$secondary-typography;
+    background-image: linear-gradient(to bottom,$color5, $color6);              
     }
     
 @mixin parrafos {
@@ -11,93 +11,86 @@ body{
     text-align: center;
     font-size: large;
     font-family: $secondary-typography;
-    color: rgb(7, 7, 7);
+    color:$color7;
 }
 
 .salidas-titulo{
-                    font-weight: bold;
-                    display: flex;
-                    justify-content: center;
-                    padding: 10px;
-                    font-size: larger;
-                    font-family: "Inter";
-                    color: rgb(7, 7, 7);}
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: larger;
+    font-family: $secondary-typography;
+    color:$color7;
+}
 
 .salidas-parrafo{
-                    padding:10px;
-                    padding-top: 50px;
-                    @include parrafos}
+    padding:10px;
+    padding-top: 50px;
+    @include parrafos
+}
 
 #bodegastitulo{
     height: 15vh;
 }                    
 
 .bodega-titulo{
-        padding-top:10px;
-        padding-bottom: 15px;
-        text-align: center;
-        font-size: larger;
-        font-weight: bolder;
-        font-family: "Inter";
-        color: rgb(11, 12, 12);
-        line-height: 10px;
+    padding-top:10px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: $secondary-typography;
+    color: rgb(11, 12, 12);
+    line-height: 10px;
 }
+
 .textoseccion{  
     text-decoration:wavy;
-    padding-top: 20px;
+    padding-top: 10px;
     font-weight: 450;
     @include parrafos
 }
-.parrafocierre{
-                
-        text-align: center;
-        font-size: larger;
-        font-family: "Inter";
-        color: rgb(11, 12, 12);
+.parrafocierre{       
+    text-align: center;
+    font-size: larger;
+    font-family: "Inter";
+    color:$color7;
         a{
             text-align: center;
             font-size: larger;
             font-family: "Inter";
             text-decoration: underline;
-            color: rgb(11, 12, 12);
+            color:$color7;
         }
-        }
+}
 
 
-@media (max-width:1180px)       {
-            .salidas-titulo{
-                            padding: 10px;
-                            text-align: center;
-                            font-size: 24px;
-            }
+@media (max-width:1180px){
+    .salidas-titulo{
+        padding: 10px;
+        text-align: center;
+        font-size: 24px;
+    }
 
-           
-
-
-
-                .mainCointainerSecciones{
-                                height: auto;
-                                
-                }
-
-
+    .mainCointainerSecciones{
+        height: auto;                                
+    }
+   
+    .bodega-titulo{
+        padding-top: 20px;
+        text-align: center;
+        font-family: "Inter";
+        color: rgb(11, 12, 12);
+        font-size:map-get($font-sz,l);;
+        height: fit-content;
+    }
                 
-                
-                .bodega-titulo{
-                                padding-top: 20px;
-                                text-align: center;
-                                font-family: "Inter";
-                                color: rgb(11, 12, 12);
-                                font-size: 25px;
-                                height: fit-content;
-                }
-                
-                .parrafocierre{
-                               
-                                text-align: center;
-                                font-size: medium;
-                                font-family: "Inter";
-                                color: rgb(11, 12, 12);
+    .parrafocierre{                   
+        text-align: center;
+        font-size: medium;
+        font-family: "Inter";
+        color: rgb(11, 12, 12);
                 a{
                     text-align: center;
                     font-size: larger;
@@ -105,67 +98,58 @@ body{
                     text-decoration: underline;
                     color: rgb(11, 12, 12);
                 }
-                }
+    }
 
-                .textoseccion{
-                                padding-top: 10px;
-                                font-size:20px;
-                                line-height: 25px;
-                }
-
-                
-                
-            }
-
+    .textoseccion{
+        padding-top: 10px;
+        font-size:20px;
+        line-height: 25px;
+    }                
+}
 
 @media (max-width:768px){
-                .salidas-parrafo{
-                                font-size: 12px;
-                                padding: 10px;
-                                line-height: 17px;
-                }
+    .salidas-parrafo{
+                    font-size: 12px;
+                    padding: 10px;
+                    line-height: 17px;
+    }
                 
-                .salidas-titulo{
-                                grid-area: salidasTitulo;
-                                font-size: 15px;
-                }
+    .salidas-titulo{
+                    grid-area: salidasTitulo;
+                    font-size:map-get($font-sz,s);
+    }
                 
-                .mainCointainerSecciones{
-                                height:auto;
+    .mainCointainerSecciones{
+                    height:auto;
                             
-                }
-             
-
-                            .bodega-titulo{
-                                    text-align: center;
-                                    font-size: 20px;
-                                    font-family: $secondary-typography;
-                                    color: rgb(11, 12, 12);
-                                    line-height: 5px;
-                    }
-                
-                
-
-                
-                .parrafocierre{
-                                text-align: center;
-                                font-size: map-get($font-sz,s);
-                                font-family: $secondary-typography;
-                                color: rgb(11, 12, 12);
-                a{
-                                    text-align: center;
-                                    font-size: map-get($font-sz,s);
-                                    font-family: $secondary-typography;
-                                    text-decoration: underline;
-                                    color: rgb(11, 12, 12);
-                    }
+    }
+    .bodega-titulo{
+                    margin-top:-10px;
+                    margin-bottom:-10px;
+                    text-align: center;
+                    font-size:map-get($font-sz,s);
+                    font-family: $secondary-typography;
+                    color: rgb(11, 12, 12);            
+    }
+    .parrafocierre{
+                    text-align: center;
+                    font-size: map-get($font-sz,s);
+                    font-family: $secondary-typography;
+                    color: rgb(11, 12, 12);
+                        a{
+                            text-align: center;
+                            font-size: map-get($font-sz,s);
+                            font-family: $secondary-typography;
+                            text-decoration: underline;
+                            color: rgb(11, 12, 12);
+                        }
                 }
 
                 .textoseccion{
-                                padding-top: 15px;
+                                margin-top:-3px;
+                                margin-bottom:-3px;
                                 font-size: map-get($font-sz,xs);
-                                line-height: 20px;
+                                line-height: 15px;
                 }
-             
-            }
+}
                 

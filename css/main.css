@@ -28,9 +28,11 @@
     grid-area: card__title;
     text-align: center;
     font-size: 20px; }
+    .card .card__title:hover {
+      transform: scale(1.03);
+      transition: all 0.3s ease; }
   .card .card__text {
     padding-top: 15px;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     grid-area: card__text;
@@ -60,8 +62,8 @@
 .card2 {
   padding-top: 5px;
   display: grid;
-  grid-template-areas: "card__title card__title" "card__text card__img" "button card__img";
-  grid-template-rows: 10% 85% 5%;
+  grid-template-areas: "card__title card__title" "card__text card__img" "card__text card__img";
+  grid-template-rows: 10% 89% 1%;
   grid-template-columns: 70% 30%;
   padding: 5px;
   margin-bottom: 15px;
@@ -86,10 +88,12 @@
     grid-area: card__title;
     text-align: center;
     font-size: 20px; }
+    .card2 .card__title:hover {
+      transform: scale(1.03);
+      transition: all 0.3s ease; }
   .card2 .card__text {
     padding-top: 15px;
     padding-left: 17px;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     grid-area: card__text;
@@ -126,7 +130,7 @@
     height: 33vh; }
     .card .card__text {
       width: fit-content;
-      font-size: 20px; }
+      font-size: 17px; }
     .card .card__title {
       font-size: 30px; }
     .card .button {
@@ -148,7 +152,7 @@
     height: 33vh; }
     .card2 .card__text {
       width: fit-content;
-      font-size: 20px; }
+      font-size: 17px; }
     .card2 .card__title {
       font-size: 30px; }
     .card2 .button {
@@ -167,44 +171,46 @@
     grid-template-areas: "card__title card__title" "card__img card__text" "card__img button";
     grid-template-rows: 10% 65% 25%;
     grid-template-columns: 40% 60%;
-    width: 390px;
-    height: 220px; }
+    width: 370px;
+    height: 220px;
+    margin: 15px; }
     .card .card__title {
       font-weight: bold;
       font-size: 10px; }
     .card .card__text {
       width: fit-content;
-      font-size: 10px; }
+      font-size: 8.9px; }
     .card .button {
       font-size: 7px; }
     .card .card__img {
       grid-area: card__img;
       justify-content: center;
       margin: 0px auto;
-      width: 150px;
-      height: 150px;
+      width: 140px;
+      height: 140px;
       border-radius: 100vh;
       object-fit: cover; }
   .card2 {
     grid-template-areas: "card__title card__title" "card__text card__img" "button card__img";
     grid-template-rows: 5% 72% 23%;
     grid-template-columns: 60% 40%;
-    width: 390px;
-    height: 220px; }
+    width: 370px;
+    height: 220px;
+    margin: 15px; }
     .card2 .card__title {
       font-weight: bold;
       font-size: 10px; }
     .card2 .card__text {
       width: fit-content;
-      font-size: 10px; }
+      font-size: 8.7px; }
     .card2 .button {
       font-size: 7px; }
     .card2 .card__img {
       grid-area: card__img;
       justify-content: center;
       margin: 0px auto;
-      width: 150px;
-      height: 150px;
+      width: 140px;
+      height: 140px;
       border-radius: 100vh;
       object-fit: cover; } }
 
@@ -214,7 +220,7 @@
 
 body {
   font-family: "Inter";
-  background-image: linear-gradient(to bottom, #A9B4C2, #EEF1EF); }
+  background-image: linear-gradient(to bottom, #EEF1EF, #efefe9); }
 
 .salidas-titulo {
   font-weight: bold;
@@ -249,7 +255,7 @@ body {
 
 .textoseccion {
   text-decoration: wavy;
-  padding-top: 20px;
+  padding-top: 10px;
   font-weight: 450;
   line-height: 30px;
   text-align: center;
@@ -261,13 +267,13 @@ body {
   text-align: center;
   font-size: larger;
   font-family: "Inter";
-  color: #0b0c0c; }
+  color: #070707; }
   .parrafocierre a {
     text-align: center;
     font-size: larger;
     font-family: "Inter";
     text-decoration: underline;
-    color: #0b0c0c; }
+    color: #070707; }
 
 @media (max-width: 1180px) {
   .salidas-titulo {
@@ -310,11 +316,12 @@ body {
   .mainCointainerSecciones {
     height: auto; }
   .bodega-titulo {
+    margin-top: -10px;
+    margin-bottom: -10px;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     font-family: "Inter";
-    color: #0b0c0c;
-    line-height: 5px; }
+    color: #0b0c0c; }
   .parrafocierre {
     text-align: center;
     font-size: 15px;
@@ -327,30 +334,32 @@ body {
       text-decoration: underline;
       color: #0b0c0c; }
   .textoseccion {
-    padding-top: 15px;
+    margin-top: -3px;
+    margin-bottom: -3px;
     font-size: 10px;
-    line-height: 20px; } }
+    line-height: 15px; } }
 
 footer {
   padding: 5px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  background-image: linear-gradient(to bottom, #A9B4C2, #EEF1EF);
+  background-image: linear-gradient(to bottom, #EEF1EF, #A9B4C2);
   line-height: 15px;
   font-family: "Inter"; }
+  footer .logo__img__footer {
+    width: 70px;
+    height: 60px; }
   footer a {
     color: #0b0c0c;
-    text-decoration: underline;
+    text-decoration: none;
     font-weight: bold;
     padding: 1px; }
   footer .legal {
     line-height: 30px;
     padding-top: 15px;
     font-family: "Inter";
-    text-decoration: solid;
-    width: 60%;
-    font-weight: 600; }
+    font-weight: 500; }
   footer .footer2 {
     font-family: "Inter";
     flex-direction: column; }
@@ -360,6 +369,8 @@ footer {
     footer .redes-sociales:hover {
       transform: scale(1.02);
       transition: all 0.3s ease; }
+    footer .redes-sociales a {
+      text-decoration: none; }
   footer .footer__text {
     padding: 10px;
     color: #0b0c0c; }
@@ -431,7 +442,7 @@ header, #headerMaipu, #headerUco, #headerCuyo, #headerContacto {
 #headerContacto {
   background-image: url(../Assets/img/HeaderContactobis.JPEG); }
 
-.titulo-pricipal {
+.titulo-principal {
   width: fit-content;
   font-family: "Caveat";
   border: none;
@@ -451,7 +462,7 @@ header, #headerMaipu, #headerUco, #headerCuyo, #headerContacto {
   100% {
     transform: translateY(0px);
     opacity: 1; } }
-  .titulo-pricipal:hover {
+  .titulo-principal:hover {
     transform: translateY(15px);
     transition: all 0.3s ease; }
 
@@ -463,15 +474,15 @@ header, #headerMaipu, #headerUco, #headerCuyo, #headerContacto {
   .navbar .navbar-brand {
     text-decoration: dashed;
     font-size: xx-large;
-    font-family: "caveat";
+    font-family: "Caveat";
     text-align: center; }
     .navbar .navbar-brand:hover {
       transform: scale(1.06);
       transition: all 0.3s ease; }
   .navbar .nav-link {
-    font-weight: 900;
-    font-family: "Inter";
-    font-size: larger; }
+    font-weight: 700;
+    font-family: "Caveat";
+    font-size: x-large; }
   .navbar .nav-item {
     font-weight: 700; }
     .navbar .nav-item:hover {
@@ -479,6 +490,12 @@ header, #headerMaipu, #headerUco, #headerCuyo, #headerContacto {
       transition: all 0.3s ease; }
 
 @media (max-width: 1180px) {
+  .navbar-toggler {
+    transform: translateY(-20px);
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 30px; }
+  .nav-item {
+    background-color: rgba(255, 255, 255, 0.75); }
   .nav-link {
     display: flex;
     padding: 0px;
@@ -504,61 +521,61 @@ header, #headerMaipu, #headerUco, #headerCuyo, #headerContacto {
   .navbar {
     height: 55px;
     font-size: 15px; }
-    .navbar .navbar-toggler {
-      padding-bottom: 10px;
-      width: 45px;
-      height: 35px; }
-    .navbar .logo__img {
-      padding-bottom: 10px;
-      width: 65px;
-      height: 45px; } }
+  .logo__img {
+    transform: translateY(-20px);
+    width: 115px;
+    height: 95px; }
+  .titulo-principal {
+    display: flex;
+    justify-content: right;
+    font-size: 45px;
+    font-weight: bolder; } }
 
 @media (max-width: 768px) {
+  .navbar-toggler {
+    transform: translateY(-20px);
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 30px; }
+  .nav-item {
+    background-color: rgba(255, 255, 255, 0.75); }
   .navbar {
-    height: 40px;
-    font-size: 15px; }
-    .navbar .navbar-toggler {
-      transform: translateY(-10px); }
-    .navbar .logo__img {
-      transform: translateY(-10px);
-      padding: 0;
-      width: 55px;
-      height: 35px; }
-  .navbar-brand {
-    font-size: 20px; }
+    height: 40px; }
   .nav-link {
-    padding: 0px;
-    margin: 0px;
-    text-decoration: dashed;
-    margin-inline-end: 0px;
-    font-weight: bolder;
-    font-size: 10px; }
+    display: flex;
+    justify-content: right; }
   .titulo {
     font-size: 10px; }
   .logo {
     font-size: 10px; }
   header, #headerMaipu, #headerUco, #headerCuyo, #headerContacto {
     background-size: contain;
+    background-image: url(../Assets/img/HeaderIndex1.jpg);
     height: 200px; }
   #headerUco {
+    background-image: url(../Assets/img/HeaderUco.jpg);
     background-size: contain;
-    height: 250px; }
+    height: 220px; }
   #headerMaipu {
+    background-image: url(../Assets/img/HeaderMaipu.jpg);
     background-size: contain;
     height: 220px; }
   #headerCuyo {
+    background-image: url(../Assets/img/HeaderCuyo.jpg);
     background-size: contain;
     height: 220px; }
   #headerContacto {
+    background-image: url(../Assets/img/HeaderContactobis.JPEG);
     background-size: contain;
     height: 220px; }
-  .titulo-pricipal {
+  .titulo-principal {
     display: flex;
-    justify-content: right;
-    padding-top: 20px;
-    font-size: 35px;
-    padding-right: 2px;
-    font-weight: bolder; } }
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 900px; }
+  .logo__img {
+    transform: translateY(-20px);
+    width: 50px;
+    height: 45px; } }
 
 .titulocontacto {
   padding: 15px;
@@ -589,12 +606,29 @@ header, #headerMaipu, #headerUco, #headerCuyo, #headerContacto {
     filter: none;
     transition: all 0.3s ease; }
 
+.img__form {
+  border-radius: 50px;
+  padding: 30px;
+  padding-top: 40px;
+  width: 500px;
+  height: 675px;
+  filter: blur(5px); }
+  .img__form:hover {
+    filter: none;
+    transition: all 0.3s ease; }
+
 @media (max-width: 1180px) {
   #formulario {
     flex-direction: column; }
   .newsletter {
     width: fit-content; }
   .img__sobreNosotros {
+    transform: translateX(70px);
+    display: flex;
+    justify-content: center;
+    width: 540px;
+    height: 575px; }
+  .img__form {
     transform: translateX(70px);
     display: flex;
     justify-content: center;
@@ -607,6 +641,12 @@ header, #headerMaipu, #headerUco, #headerCuyo, #headerContacto {
   .newsletter {
     width: fit-content; }
   .img__sobreNosotros {
+    transform: translateX(25px);
+    display: flex;
+    justify-content: center;
+    width: 340px;
+    height: 375px; }
+  .img__form {
     transform: translateX(25px);
     display: flex;
     justify-content: center;
