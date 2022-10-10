@@ -440,7 +440,7 @@ header, #headerMaipu, #headerUco, #headerCuyo, #headerContacto {
   background-position: top; }
 
 #headerContacto {
-  background-image: url(../Assets/img/HeaderContactobis.JPEG); }
+  background-image: url(../Assets/img/HeaderContactobis.jpg); }
 
 .titulo-principal {
   width: fit-content;
@@ -564,7 +564,7 @@ header, #headerMaipu, #headerUco, #headerCuyo, #headerContacto {
     background-size: contain;
     height: 220px; }
   #headerContacto {
-    background-image: url(../Assets/img/HeaderContactobis.JPEG);
+    background-image: url(../Assets/img/HeaderContactobis.jpg);
     background-size: contain;
     height: 220px; }
   .titulo-principal {

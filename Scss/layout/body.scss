@@ -54,12 +54,12 @@ body{
 .parrafocierre{       
     text-align: center;
     font-size: larger;
-    font-family: "Inter";
+    font-family: $secondary-typography;
     color:$color7;
         a{
             text-align: center;
             font-size: larger;
-            font-family: "Inter";
+            font-family:$secondary-typography;
             text-decoration: underline;
             color:$color7;
         }
